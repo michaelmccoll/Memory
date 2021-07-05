@@ -17,8 +17,8 @@ export default {
     data() {
         return {
             images: [
-                'alex.png', 'dani.png', 'jael.png', 'kamil.png', 
-                'pete.png', 'piotr.png', 'stuart.png', 'tim.png'
+              'cats.jpg', 'harv.jpg', 'jack.jpg', 'layla.jpg', 
+              'max.jpg', 'misty.jpg', 'rambo.jpg', 'snowharv.jpg'
             ],
             cards: [],
             url: null,
@@ -96,8 +96,8 @@ export default {
       this.cards = []
       if (url === 'classic') {
         this.images = [
-          'alex.png', 'dani.png', 'jael.png', 'kamil.png', 
-          'pete.png', 'piotr.png', 'stuart.png', 'tim.png'
+          'cats.jpg', 'harv.jpg', 'jack.jpg', 'layla.jpg', 
+          'max.jpg', 'misty.jpg', 'rambo.jpg', 'snowharv.jpg'
             ]
         this.assignIds()
       }

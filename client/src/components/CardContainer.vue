@@ -325,7 +325,7 @@ button {
 }
 .confetti:nth-child(2n) {
   /* background-color: rgb(77, 182, 243); */
-  background-image: url('../assets/imgs/alex.png');
+  background-image: url('../assets/imgs/cats.jpg');
   background-size: contain;
   top: 6%;
   left: 20%;
@@ -333,7 +333,7 @@ button {
 }
 .confetti:nth-child(3n + 3) {
   /* background-color: rgba(40, 246, 47, 1); */
-  background-image: url('../assets/imgs/dani.png');
+  background-image: url('../assets/imgs/harv.jpg');
   background-size: contain;
   top: 6%;
   left: 30%;
@@ -341,7 +341,7 @@ button {
 }
 .confetti:nth-child(4n + 4) {
   /* background-color: rgb(213, 78, 242); */
-  background-image: url('../assets/imgs/jael.png');
+  background-image: url('../assets/imgs/jack.jpg');
   background-size: contain;
   top: 6%;
   left: 40%;
@@ -349,7 +349,7 @@ button {
 }
 .confetti:nth-child(5n + 5) {
   /* background-color: rgb(77, 182, 243); */
-  background-image: url('../assets/imgs/kamil.png');
+  background-image: url('../assets/imgs/layla.jpg');
   background-size: contain;
   top: 6%;
   left: 50%;
@@ -357,7 +357,7 @@ button {
 }
 .confetti:nth-child(6n + 6) {
   /* background-color: rgba(40, 246, 47, 1); */
-  background-image: url('../assets/imgs/pete.png');
+  background-image: url('../assets/imgs/max.jpg');
   background-size: contain;
   top: 6%;
   left: 60%;
@@ -365,7 +365,7 @@ button {
 }
 .confetti:nth-child(7n + 7) {
   /* background-color: rgb(242, 215, 78); */
-  background-image: url('../assets/imgs/piotr.png');
+  background-image: url('../assets/imgs/misty.jpg');
   background-size: contain;
   top: 6%;
   left: 70%;
@@ -373,7 +373,7 @@ button {
 }
 .confetti:nth-child(8n + 8) {
   /* background-color: rgb(77, 182, 243); */
-  background-image: url('../assets/imgs/stuart.png');
+  background-image: url('../assets/imgs/rambo.jpg');
   background-size: contain;
   top: 6%;
   left: 80%;
@@ -381,7 +381,7 @@ button {
 }
 /* /* .confetti:nth-child(9n + 9) {
   background-color: rgba(40, 246, 47, 1);
-  background-image: url('../assets/imgs/tim.png');
+  background-image: url('../assets/imgs/snowharv.jpg');
   background-size: contain;
   top: -10%;
   left: 90%;

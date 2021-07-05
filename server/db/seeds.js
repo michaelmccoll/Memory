@@ -4,11 +4,11 @@ db.dropDatabase();
 
 db.players.insertMany([
     {
-        "name": "Vitor Amandio",
+        "name": "Lorna McColl",
         "games": []
       },
     {
-        "name": "Calum Gunn",
+        "name": "Mary McColl",
         "games": []
       },
     {
