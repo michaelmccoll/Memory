@@ -143,26 +143,28 @@ export default {
 
 .playerSelected {
   grid-area: playerSelected;
-  background-color: white;
+  background-color: rgb(149, 201, 243);
   margin: 4px;
-  padding: 4px;
+  padding: 10px;
   border-radius: 12px;
+  align-items: center;
+  justify-content: center;
 }
 
 .stats {
   grid-area: stats;
   background-color: white;
-  margin: 4px;
-  padding: 15px;
+  margin: 6px;
+  padding: 10px;
   border-radius: 12px;
-  text-align: justify;
+  text-align: center;
 }
 
 .gridArea {
   grid-area: gridArea;
   border-radius: 8px;
   background: black;
-
+  margin: 4px;
   /* background: radial-gradient(circle, rgba(166,241,255,1) 0%, rgba(1,71,246,1) 100%); */
   border-color: white;
   border-radius: 50%;
@@ -200,20 +202,27 @@ export default {
 .gameView {
   display: grid;
   background-color: black;
-  grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 3fr 3fr 3fr 3fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "header header header header header header"
-    ". . playerList stats . ."
-    ". . newPlayer stats . ."
-    ". . playerSelected playerSelected . ."
-    ". gridArea gridArea gridArea gridArea ." 
-    ". gridArea gridArea gridArea gridArea ." 
-    ". gridArea gridArea gridArea gridArea ." 
-    ". gridArea gridArea gridArea gridArea ."
-    ". . leaderboard leaderboard . ." 
+    "header header header header header header header header"
+    ". . . playerList newPlayer . . ."
+    ". . . playerSelected playerSelected . . ."
+    ". . . stats stats . . ."
+    ". . gridArea gridArea gridArea gridArea . ." 
+    ". . gridArea gridArea gridArea gridArea . ." 
+    ". . gridArea gridArea gridArea gridArea . ." 
+    ". . gridArea gridArea gridArea gridArea . ."
+    ". . . leaderboard leaderboard . . ." 
 }
 
+h3 {
+  font-size: 24px !important;
+  margin: 0px !important;
+}
 
+button {
+  font-size: 18px !important;
+}
 
 </style>

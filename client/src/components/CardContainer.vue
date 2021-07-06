@@ -1,26 +1,30 @@
 <template>
   <section>
     <!-- <button @click="win()">Win!</button> -->
-    <div class="reset-button"> 
-      <button :disabled="waiting" @click="resetGame">
-        <b-icon class="reset-icon" icon="arrow-clockwise" font-scale="3"></b-icon>
-      </button>
-    </div>
+
     <div class="grid">
       <div class="grid-card" v-for="(card, index) in this.cards" :key="index">
         <button :disabled="card.flipped || waiting" :class="{ 'flipped': card.flipped }" @click="move(card)">
           <div class="on-top">
             <img v-if="imageUrl='classic'" class="pic" :src="require(`@/assets/imgs/${card.img}`)"/>
             <img v-else class="pic" :src="card.img">
-            <img class="codeclan" src="../assets/default.png">
+            <img class="codeclan" src="../assets/default.jpg">
           </div>
         </button>
       </div>
+
     </div>
     <b-modal ref='result-show' hide-footer hide-header>
       <div class="confetti" v-for="n in 20" :key='n'></div>
       <results :finalResults="finalResults" :images="images"/>
     </b-modal>
+
+    <div class="reset-button"> 
+      <button :disabled="waiting" @click="resetGame">
+        <b-icon class="reset-icon" icon="arrow-clockwise" font-scale="3"></b-icon>
+      </button>
+    </div>
+
   </section>
 </template>
 
@@ -222,7 +226,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(149, 201, 243);
 }
 
 .on-top{
@@ -306,7 +310,7 @@ button {
 .confetti {
   width: 100px;
   height: 100px;
-  background-image: url('../assets/default.png');
+  background-image: url('../assets/default.jpg');
   background-size: contain;
   position: absolute;
   top: 6%;
@@ -317,7 +321,7 @@ button {
 }
 .confetti:nth-child(1) {
   /* background-color: rgb(242, 215, 78); */
-  background-image: url('../assets/default.png');
+  background-image: url('../assets/default.jpg');
   background-size: contain;
   top: 6%;
   left: 10%;
@@ -379,17 +383,10 @@ button {
   left: 80%;
   animation-delay: 2s;
 }
-/* /* .confetti:nth-child(9n + 9) {
-  background-color: rgba(40, 246, 47, 1);
-  background-image: url('../assets/imgs/snowharv.jpg');
-  background-size: contain;
-  top: -10%;
-  left: 90%;
-  animation-delay: 3.5s;
-} */
+
 .confetti:nth-child(10n + 10) {
   /* background-color: rgb(213, 78, 242); */
-  background-image: url('../assets/default.png');
+  background-image: url('../assets/default.jpg');
   background-size: contain;
   top: 6%;
   left: 0%;

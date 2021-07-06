@@ -1,7 +1,7 @@
 <template>
   <section>
-      <b-form-select style="width: 50%" @change="changeImages(url)" v-model="url" :options="options" class="mt-3"></b-form-select>
       <card-container :url="url" :assignedCards="cards"/>
+      <b-form-select style="width: 30%" @change="changeImages(url)" v-model="url" :options="options" class="mt-3"></b-form-select>
   </section>
 </template>
 
